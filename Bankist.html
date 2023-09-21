@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link for icon in title -->
+    <link rel="icon" type="icon/png" href="/icon.png"/>
+    
+    <!-- link for fonts family -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Bankist Small Project</title>
+</head>
+<body>
+    <!-- nav bar to display default page or home page -->
+    <nav>
+        <h1 id="loginHeading"> Log In to Access Bank</h1>
+        <img class="logo" src="icon.png" alt="bank logo">
+        <form class="login">
+            <input type="text" 
+                    placeholder="User"
+                    class="uesrName loginInputs">
+            
+            <input type="password" 
+                    placeholder="PIN"
+                    maxlength="5"
+                    class="pin loginInputs">
+
+            <button class="submit ">&rarr;</button>
+        </form>
+
+    </nav>
+
+<!-- main section which is display after log in  -->
+    <main class="application">
+        <!--      balance     -->
+        <div class="balance">
+          <div>
+            <h2 class="CurrentBalance">Current Balance</h2>
+            <p class="balanceDate">
+                As Of <span class="date">05/08/2023</span>
+            </p>
+          </div>
+        <p class="balanceValue">$0000.00</p>
+    </div>
+
+
+<!-- Movements  -->
+    <div class="movement">
+        <div class="movmentRow">
+            <div class="movType movTypeDepo">2 deposite</div>
+            <div class="movDate">3 days Ago</div>
+            <div class="movValue">4 000$</div>
+        </div>
+        <div class="movmentRow">
+            <div class="movType movTypeWithdrew">1 withdrawal</div>
+            <div class="movDate">24/01/2021</div>
+            <div class="movValue">-200$</div>
+        </div>
+    </div>
+
+<!-- SUMMURY  -->
+    <div class="summury">
+        <p class="summuryLBL">IN</p>
+        <p class="summuryINvalue">0000$</p>
+        <p class="summuryLBL">OUT</p>
+        <p class="summuryOUTvalue">0000$</p>
+        <p class="summuryLBL">INTEREST</p>
+        <p class="summuryINTERESTvalue">0000.00$</p>
+       
+    </div>
+
+<!-- OPERATION TRANSFER  -->
+    <div class="operation operationTransfer">
+        <h2>Transfer Money</h2>
+        <form class=" form formTransfer">
+            <input type="text" class="formInput transferTo" placeholder="Transfer To" />
+            <input type="number" class="formInput transferAmount " placeholder="Amount">
+            <button class="formBTN btntransfer">&rightarrow;</button>
+            <p class="error msg"></p>
+        </form>
+    </div>
+
+
+<!-- OPERATION LOAN  -->
+<div class="operation operationLoan">
+    <h2>Request Loan </h2>
+    <form class=" form formLoan">
+        <input type="number" class="formInput inputLoanAmount" placeholder="Amount" />
+        <button class="formBTN formBTNLoan ">&rightarrow;</button>
+        <p class="errorLoan error msg"></p>
+    </form>
+</div>
+
+
+<!-- OPERATION CLOSE  -->
+<div class="operation operationCloseAccount">
+    <h2>Close Account</h2>
+    <form class=" form formClose">
+        <input type="text" class="formInput inputUser" placeholder="Conform User" />
+        <input type="password" maxlength="5"
+        class="formInput formConPin " placeholder="Conform PIN">
+        <button class="formBTN formBTNClose">&rightarrow;</button>
+        <p class="errorClose error msg"></p>
+    </form>
+</div>
+
+<div class="logOut">
+    <h2 class="logOutTime">You Will Be Logged Out In <span class="time">5:00</span></h2>
+</div>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

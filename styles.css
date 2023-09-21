@@ -1,0 +1,176 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html{
+    font-size:70% ;
+}
+body{
+    background-color: lightblue;
+    font-family: "poppins",sans-serif;
+    color:black;
+    height: 150vh;
+    padding:2rem;
+}
+nav{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.loginHeading{
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+.logo{
+    height: 5.2rem;
+}
+.login{
+    display: flex;
+    justify-content: space-between;
+}
+.loginInputs{
+    border:2px solid steelblue;
+    border-radius:10rem ;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s;
+    text-align: center;
+    width: 12rem;
+}
+.loginInputs:focus{
+    background:skyblue;
+}
+.loginInputs::placeholder{
+ color: #777;
+}
+.submit{
+    border: 2px solid steelblue;
+    /* background: none; */
+    font-size: 2.2rem;
+    /* color: inherit; */
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius:10rem ;
+    padding: 0.5rem 2rem;
+    
+}
+.submit:focus{    
+    color:#777;
+}
+.application{
+    position: relative;
+    max-width: 100rem;
+    margin: 0rem 2rem;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: repeat(4,15rem) auto;
+    gap: 1rem;
+    opacity: 0;
+    transition: all 1s;
+}
+.balance{
+    font-size: 2rem;
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movement{
+    font-size: 1.5rem;
+    grid-row: 2/ span 3;
+    background-color: aliceblue;
+    border-radius: 1.5rem;
+    overflow: scroll;
+
+}
+.movTypeDepo{
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: lightgreen;
+}
+.movTypeWithdrew{
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: salmon;
+}
+.movmentRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 2px solid lightblue;
+}
+.summury{
+    padding: 2rem;
+    font-size: 1.5rem;
+    grid-row: 5/6;
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.summuryINvalue , .summuryINTERESTvalue{
+    color: rgb(17, 84, 17);
+
+}
+.summuryOUTvalue{
+    color:rgb(249, 94, 77)
+}
+.btnSort{
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    font-weight: 550;
+}
+.operation{
+    background-color: #777;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.formInput{
+    background: white;
+    opacity: 0.6;
+    border-radius:1rem ;
+    padding: 0.5rem 1rem;
+}
+.formInput::placeholder{
+    text-align: center;
+    color: #777;
+}
+.formInput:focus{
+    background: rgb(239, 183, 183);
+}
+.formBTN{
+    border-radius:1rem ;
+    padding: 0.5rem 0.5rem;
+}
+.operationTransfer{
+    background-image: linear-gradient(to top left,#ffb003, #ffcb03);
+}
+.error, .errorTransfer, .msg{
+    color: red;
+}
+/* .msg{
+    color: green;
+    text-transform:uppercase;
+} */
+.operationLoan{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.operationCloseAccount{
+    background-image: linear-gradient(to top left,#e52a5a, #ff585f);
+}
+.logOut{
+
+    /* background-color: #777; */
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+.logOut h2{
+    margin-left: 15rem;
+}
